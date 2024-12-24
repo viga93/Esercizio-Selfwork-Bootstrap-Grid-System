@@ -1,0 +1,47 @@
+/* Impostazione dello sfondo nero per il sito */
+body.background-nero {
+    background-color: #000000 !important;
+    color: white; /* Colore del testo bianco per contrasto */
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: url('sfondo 1.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Film Section */
+.film img {
+    width: 100%;
+    height: auto;
+}
+
+.footer {
+    background-color: #000000;  /* Sfondo footer nero */
+    color: white;  /* Testo footer bianco */
+    padding: 20px 0;
+}
+
+/* Personalizzazione della navbar */
+.navbar {
+    margin-bottom: 50px; /* Distanza per evitare sovrapposizione */
+    background-color: #333;  /* Navbar scura */
+}
+
+/* Responsività aggiuntiva */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+}
+

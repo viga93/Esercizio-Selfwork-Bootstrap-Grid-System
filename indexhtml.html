@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il Tuo Cinema</title>
+    <!-- Link al file CSS esterno -->
+    <link href="style.css" rel="stylesheet">
+    <!-- Link al CSS di Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="background-nero">
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Il Tuo Cinema</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#film">Film</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#lavora">Lavora con Noi</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div>
+            <h1>Benvenuto al Tuo Cinema</h1>
+            <p>Scopri i migliori film, ovunque tu sia.</p>
+        </div>
+    </header>
+
+    <!-- Sezione Film -->
+    <section id="film" class="container mt-5 pt-5">
+        <h2 class="text-center mb-4">Film Consigliati</h2>
+        <div class="row">
+            <!-- Film 1 -->
+            <div class="col-md-4 film mb-4">
+                <a href="https://www.rottentomatoes.com" target="_blank">
+                    <img src="https://resizing.flixster.com/JFL4sa9Rlt0lTHALAQt-__DZCZo=/206x305/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p21578_p_v8_aa.jpg" alt="Film 1">
+                    <h3 class="text-center">Film Drammatico</h3>
+                    <p>Una descrizione emozionante e coinvolgente di questo film.</p>
+                </a>
+            </div>
+            <!-- Film 2 -->
+            <div class="col-md-4 film mb-4">
+                <a href="https://www.rottentomatoes.com" target="_blank">
+                    <img src="https://resizing.flixster.com/o2EKNqOThRSnzzz9u5pAnBfWvl8=/206x305/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p4464_p_v10_aa.jpg" alt="Film 2">
+                    <h3 class="text-center">Film Comico</h3>
+                    <p>Un'avventura che ti farà ridere dall'inizio alla fine.</p>
+                </a>
+            </div>
+            <!-- Film 3 -->
+            <div class="col-md-4 film mb-4">
+                <a href="https://www.rottentomatoes.com" target="_blank">
+                    <img src="https://resizing.flixster.com/l930MmmD_cZHLccwvjDMzLq5nps=/206x305/v2/https://resizing.flixster.com/sPD8qwWkiDUukuoxqY8sx4oqD-Y=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzFlNjZlYzRkLThjZTItNDUyYi05ZDUzLTg1NGE2YTc2YTM5MC5wbmc=" alt="Film 3">
+                    <h3 class="text-center">Film Horror</h3>
+                    <p>Un film da brivido che ti terrà incollato alla sedia.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sezione Lavora con Noi -->
+    <section id="lavora" class="container mb-5">
+        <h2 class="text-center mb-4">Lavora con Noi</h2>
+        <form>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Inserisci la tua email" required>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Inserisci la tua password" required>
+            </div>
+            <button type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#thankYouModal">Invia</button>
+        </form>
+    </section>
+
+    <!-- Modal di ringraziamento -->
+    <div class="modal fade" id="thankYouModal" tabindex="-1" aria-labelledby="thankYouModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="thankYouModalLabel">Grazie per averci contattato!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    La tua richiesta è stata inviata con successo. Ti contatteremo presto!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <p>P.IVA: 123456789</p>
+        <p>Proprietario: Nome Proprietario</p>
+        <p>
+            <a href="#" class="text-white me-3">Facebook</a>
+            <a href="#" class="text-white me-3">Instagram</a>
+            <a href="#" class="text-white">Twitter</a>
+        </p>
+    </footer>
+
+    <!-- Script JS di Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
